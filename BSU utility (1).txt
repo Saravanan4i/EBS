@@ -1,0 +1,15 @@
+. ./bsu_update.sh install
+
+./bsu.sh -remove -prod_dir=/u02/apps/fs1/FMW_Home/wlserver_10.3 -log=/u02/apps/fs1/FMW_Home/utils/bsu/rm_log/CIH8.txt -patchlist=YVDZ -verbose
+
+./bsu.sh -install -patch_download_dir=/u02/apps/fs1/FMW_Home/utils/bsu/cache_dir -patchlist=AXXI -prod_dir=/u02/apps/fs1/FMW_Home/wlserver_10.3 -verbose
+
+
+
+To view all the patches applied on wls server 10.3
+[apppatch@nporadb02 application]$ export ORACLE_HOME=$FMW_HOME
+[apppatch@nporadb02 application]$ cd /u01/ebspatch/application/fs1/FMW_Home/utils/bsu/
+[apppatch@nporadb02 bsu]$ bsu.sh -prod_dir=$ORACLE_HOME/wlserver_10.3 -status=applied -view    
+(can use grep to find particular patch: | grep patch_no) 
+
+
