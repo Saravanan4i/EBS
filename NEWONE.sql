@@ -7,3 +7,6 @@ CREATE TABLE NEWONE (
     salary DECIMAL(10, 2),
     hire_date DATE
 );
+/
+alter table NEWONE add creation_date DATE;
+alter table NEWONE add creation_by NUMBER;
