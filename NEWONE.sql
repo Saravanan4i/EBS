@@ -8,5 +8,4 @@ CREATE TABLE NEWONE (
     hire_date DATE
 );
 /
-alter table NEWONE add creation_date DATE;
 alter table NEWONE add creation_by NUMBER;
