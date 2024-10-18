@@ -4,6 +4,6 @@ CREATE TABLE RECENT (
     last_name VARCHAR(50),
     department VARCHAR(50),
     salary DECIMAL(10, 2),
-    hire_date DATE
+    hire_date DATE );
 /
 alter table RECENT add creation_by NUMBER;
