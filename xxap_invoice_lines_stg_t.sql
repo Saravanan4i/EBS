@@ -33,3 +33,4 @@ create table xxap_invoice_lines_stg
   last_update_login  number
 );
 /
+--

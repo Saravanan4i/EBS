@@ -64,3 +64,4 @@ from   xxap_invoice_headers_stg h,
        xxap_invoice_lines_stg   l
 where  nvl(h.invoice_id,1) = nvl(l.invoice_id,1)
 and    h.invoice_num       = l.invoice_num;
+/

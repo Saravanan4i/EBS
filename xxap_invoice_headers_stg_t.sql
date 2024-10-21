@@ -34,4 +34,4 @@ create table xxap_invoice_headers_stg
   last_update_date   date,
   last_update_login  number
 );
-/
+-- +
