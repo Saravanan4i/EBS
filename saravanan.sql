@@ -7,6 +7,4 @@ CREATE TABLE saravanan (
     department VARCHAR(50),           -- Department where the person works
     hire_date DATE,                   -- Date when the person was hired
     salary DECIMAL(10, 2),            -- Salary with two decimal points
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Record creation time
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP  -- Record last update time
 );
